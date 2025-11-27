@@ -1,0 +1,28 @@
+// Table Animations
+
+.table {
+  tbody tr {
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba(var(--bs-primary-rgb), 0.05);
+      transform: scale(1.01);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.table-responsive {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

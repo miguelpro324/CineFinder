@@ -1,0 +1,29 @@
+// Global base styles
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Theme specific styles
+[data-bs-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-bs-theme="light"] {
+  color-scheme: light;
+}

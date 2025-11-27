@@ -1,0 +1,37 @@
+// Modal Animations
+
+.modal {
+  &.fade .modal-dialog {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  &.show .modal-dialog {
+    animation: modalSlideIn 0.3s ease-out;
+  }
+}
+
+.modal-content {
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  .btn-close {
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: rotate(90deg) scale(1.2);
+    }
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

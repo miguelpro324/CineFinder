@@ -1,4 +1,25 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs and cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.vite-inspect
+.eslintcache
+
+# TypeScript
+/lib
+/es
+/umd

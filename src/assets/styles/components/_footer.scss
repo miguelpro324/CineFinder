@@ -1,0 +1,54 @@
+// Footer Component Styles
+
+footer {
+  margin-top: auto;
+  animation: slideUp 0.5s ease-out;
+
+  .hover-primary {
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+
+    &:hover {
+      color: var(--bs-primary) !important;
+      transform: translateX(5px);
+    }
+  }
+
+  .footer-logo {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05) rotate(5deg);
+    }
+  }
+
+  h5, h6 {
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--bs-primary);
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
